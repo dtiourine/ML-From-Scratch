@@ -1,2 +1,5 @@
 # intellij configs
 .idea/
+
+#ds_store
+.DS_store
