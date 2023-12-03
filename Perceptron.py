@@ -1,9 +1,9 @@
 import numpy as np
 
 class Perceptron():
-    def __init__(self, input_shape):
+    def __init__(self, num_features):
+        self.weights = np.random.randn(num_features)
         self.bias = 0.0
-        self.weights = np.random.randn(input_shape)
 
     def forward_pass(self, x):
         """
@@ -18,12 +18,20 @@ class Perceptron():
         z = np.dot(x, self.weights) + self.bias
         a = np.where( z >= 0, 1, 0)
         return a
-    def train(self, x, y):
+    def train(self, X, y, learning_rate=0.05, epochs=100):
 
-        yhat = self.forward_pass(x)
+        errors = []
 
-        w_delta = 
-        b_delta =
+        for epoch in range(epochs):
+            errors = 0
+            for xi, y in zip(X,y):
+                yhat = self.forward_pass(xi)
+                w_delta = self.learning_rate * (y - yhat) * xi
+                b_delta = self.learning_rate * (y - yhat)
+                self.weights = self.weights + w_delta
+                self.bias = self.bias + b_delta
+                errors += int(self.lr * (y - yhat) != 0.0)
+            errors_.append(errors)
+        return self
 
-        self.weights = self.weights + w_delta
-        self.bias = self.bias + b_delta
+
