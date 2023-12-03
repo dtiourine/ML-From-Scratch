@@ -21,7 +21,7 @@ class LinearRegressionModel():
         - num_weights (int): Defines the number of weights of the model
 
         """
-        self.bias = 0.05
+        self.bias = 0.0
         self.weights = np.random.randn(num_weights)
 
     def predict(self, x):
