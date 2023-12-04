@@ -20,11 +20,16 @@ class LinearRegressionModel():
        Args:
         - num_weights (int): Defines the number of weights of the model
 
+       Attributes:
+        - bias (float): Bias term of the model
+        - weights (numpy ndarray): Array containing the weights of the model
+
         """
         self.bias = 0.0
         self.weights = np.random.randn(num_weights)
 
     def predict(self, x):
+
         """
         Computes the prediction of the model
 
