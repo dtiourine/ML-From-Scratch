@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project aims to implement various machine learning models from scratch to gain a better understanding of the underlying algorithms and principles that power popular machine learning libraries like scikit-learn. By building these models manually, we aim to enhance our knowledge and intuition about how these models work "under the hood."
+This project aims to implement various machine learning models from scratch to gain a better understanding of the underlying algorithms and principles that power popular machine learning libraries like scikit-learn. By building these models manually, I aim to enhance our knowledge and intuition about how these models work "under the hood."
 
 ## Motivation 
 
