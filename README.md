@@ -16,6 +16,7 @@ Machine learning libraries offer powerful tools for building and deploying machi
 
 Currently, the following machine learning models have been implemented in this project:
 
+* Linear Regression
 * Logistic Regression
 
 
