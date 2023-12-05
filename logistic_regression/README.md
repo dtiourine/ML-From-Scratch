@@ -12,6 +12,6 @@ This directory contains the implementation of logistic regression from scratch i
 * evaluate_logistic_regression.py: Code for evaluating the trained model's performance on the test set.
 * saved_trained_model/trained_iris_model.pkl: Saved model
 
-  ## Dataset
+## Dataset
 
-  The dataset used to train/test this model was The Iris Dataset, obtained from https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html
+The dataset used to train/test this model was The Iris Dataset, obtained from https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html
