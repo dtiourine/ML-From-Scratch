@@ -2,22 +2,19 @@ import numpy as np
 from LogisticRegression import LogisticRegression
 from sklearn import datasets
 
-iris = datasets.load_iris()
+iris = datasets.load_iris() #Load in the Iris dataset from scikit learn
 
+# Retrieve the feature matrix (X) and target labels (y)
 X = iris.data
 y = iris.target
-X = X[y !=2] #Turn into binary classification task by only looking at the first two classes
-y = y[y !=2] #Turn into binary classification task by only looking at the first two classes
+
+# Create a binary classification task by selecting only the first two classes
+X = X[y !=2]
+y = y[y !=2]
 
 #print(X)
 #print(y)
 
-iris_model = LogisticRegression(num_features=4)
-iris_model.train(X, y)
-yhat = iris_model.predict(X)
+iris_model = LogisticRegression(num_features=4) #Instantiate model with 4 features
 
-def accuracy(yhat, y):
-    acc = np.sum(yhat == y)/len(y) * 100
-    return 'Accuracy: '+ str(acc) + '%'
-
-print(accuracy(yhat, y))
+iris_model.train(X, y) #Train the model on X, using true labels y
