@@ -52,7 +52,8 @@ class LogisticRegression():
          - self (LogisticRegression): Trained model
 
         """
-
+        self.epochs = epochs
+        self.loss_log = []
         for epoch in range(epochs):
             total_loss = 0
             for x_i, y_i in zip(X, y):
@@ -63,6 +64,7 @@ class LogisticRegression():
                 dj_db = a_i - y_i
                 self.weights = self.weights - learning_rate*dj_dw
                 self.bias = self.bias - learning_rate*dj_db
+            self.loss_log.append(total_loss/len(y))
             if epoch % 10 == 0:
                 print(f'[{epoch}] Avg Loss: {total_loss/len(y):.4f}' + ' Accuracy: ' + str(np.sum(self.predict(X) == y)/len(y) * 100) + '%')
 

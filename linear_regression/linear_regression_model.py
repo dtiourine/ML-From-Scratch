@@ -33,6 +33,8 @@ class LinearRegression():
         return np.dot(X, self.weights) + self.bias
 
     def train(self, X, y, learning_rate=0.01, epochs=100):
+        self.loss_log = []
+        self.epochs = epochs
         for epoch in range(epochs):
             total_loss = 0
             for x_i, y_i in zip(X, y):
@@ -43,7 +45,9 @@ class LinearRegression():
                 dJ_db = 2 * (y_hat_i - y_i)
                 self.weights = self.weights - learning_rate * dJ_dw
                 self.bias = self.bias - learning_rate * dJ_db
+            self.loss_log.append(total_loss/len(y))
             print(f'[{epoch}] Avg Loss: {total_loss/len(y):.4f}')
+        return self
 
 
 
