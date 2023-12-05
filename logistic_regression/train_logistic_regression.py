@@ -1,20 +1,10 @@
-import numpy as np
-from LogisticRegression import LogisticRegression
-from sklearn import datasets
+from logistic_regression_model import LogisticRegression
+from data_loader import X_train, y_train
+import pickle
 
-iris = datasets.load_iris() #Load in the Iris dataset from scikit learn
+if __name__ == "__main__":
+    iris_model = LogisticRegression(num_features=4) #Instantiate model with 4 features
+    trained_iris_model = iris_model.train(X_train, y_train) #Train the model on X, using true labels y
 
-# Retrieve the feature matrix (X) and target labels (y)
-X = iris.data
-y = iris.target
-
-# Create a binary classification task by selecting only the first two classes
-X = X[y !=2]
-y = y[y !=2]
-
-#print(X)
-#print(y)
-
-iris_model = LogisticRegression(num_features=4) #Instantiate model with 4 features
-
-iris_model.train(X, y) #Train the model on X, using true labels y
+    with open('saved_trained_model/trained_iris_model.pkl', 'wb') as f:
+        pickle.dump(trained_iris_model, f)

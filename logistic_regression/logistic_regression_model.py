@@ -65,6 +65,7 @@ class LogisticRegression():
                 self.bias = self.bias - learning_rate*dj_db
             if epoch % 10 == 0:
                 print(f'[{epoch}] Avg Loss: {total_loss/len(y):.4f}' + ' Accuracy: ' + str(np.sum(self.predict(X) == y)/len(y) * 100) + '%')
+
         return self
 
     def predict(self, X):
