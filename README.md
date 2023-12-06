@@ -21,7 +21,7 @@ Currently, the following machine learning models have been implemented in this p
 
 ## Datasets
 
-* Linear Regression: Scikit-learn's diabates dataset was used (https://scikit-learn.org/stable/datasets/toy_dataset.html)
-* Logistic Regression: Scikit-learn's iris dataset was used (https://scikit-learn.org/stable/datasets/toy_dataset.html)
+* Linear Regression: Trained/tested on scikit-learn's diabates dataset (https://scikit-learn.org/stable/datasets/toy_dataset.html)
+* Logistic Regression: Trained/tested on scikit-learn's iris dataset (https://scikit-learn.org/stable/datasets/toy_dataset.html)
 
 
