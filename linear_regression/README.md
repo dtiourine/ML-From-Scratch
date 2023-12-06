@@ -14,4 +14,4 @@ This directory contains the implementation of linear regression from scratch in 
 
 ## Dataset
 
-The dataset used to train/test this model was scikit-learn diabetes dataset, obtained from https://scikit-learn.org/stable/datasets/toy_dataset.html
+The dataset used to train/test this model was the scikit-learn diabetes dataset, obtained from https://scikit-learn.org/stable/datasets/toy_dataset.html
