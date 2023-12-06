@@ -16,6 +16,12 @@ Machine learning libraries offer powerful tools for building and deploying machi
 
 Currently, the following machine learning models have been implemented in this project:
 
+* Linear Regression
 * Logistic Regression
+
+## Datasets
+
+* Linear Regression: Scikit-learn's diabates dataset was used (https://scikit-learn.org/stable/datasets/toy_dataset.html)
+* Logistic Regression: Scikit-learn's iris dataset was used (https://scikit-learn.org/stable/datasets/toy_dataset.html)
 
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This directory contains the implementation of logistic regression from scratch in Python. Logistic regression is a widely used classification algorithm that is fundamental to many machine learning tasks. This implementation is designed for educational purposes and provides insights into the inner workings of logistic regression.
+This directory contains the implementation of logistic regression from scratch in Python. Logistic regression is a widely used classification algorithm that is fundamental to many machine learning tasks.
 
 ## Implementation 
 
@@ -14,4 +14,4 @@ This directory contains the implementation of logistic regression from scratch i
 
 ## Dataset
 
-The dataset used to train/test this model was The Iris Dataset, obtained from https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html
+The dataset used to train/test this model was the scikit-learn iris dataset, obtained from https://scikit-learn.org/stable/datasets/toy_dataset.html
