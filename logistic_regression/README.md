@@ -14,4 +14,4 @@ This directory contains the implementation of logistic regression from scratch i
 
 ## Dataset
 
-The dataset used to train/test this model was The Iris Dataset, obtained from https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html
+The dataset used to train/test this model was the scikit-learn diabetes dataset, obtained from https://scikit-learn.org/stable/datasets/toy_dataset.html
