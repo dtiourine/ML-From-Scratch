@@ -16,6 +16,7 @@ def forward_propogation(X, W1, b1, W2, b2):
     A1 = ReLU(Z1)
     Z2 = np.dot(A1, W2) + b2
     A2 = ReLU(Z2)
+
 def one_hot(Y):
     one_hot_Y = np.zeros((Y.size, Y.max() + 1))
     one_hot_Y[np.arange(Y.size), Y] = 1
