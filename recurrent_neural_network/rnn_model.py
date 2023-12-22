@@ -16,6 +16,7 @@ Ty_i: Length of the output sequence in the i-th training example
 Vocabulary or Dictionary: List of words used in the representations
 x-1, x_2, x_3, ...: One-hot representations of individual words in the sentence
 Unknown Word (UNK): Token used to represent words not in the vocabulary
+
 '''
 
 def ReLU(z):
