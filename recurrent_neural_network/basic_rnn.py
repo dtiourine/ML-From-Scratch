@@ -99,20 +99,17 @@ def loss(y_true, y_pred):
 
 def backward_prop():
     pass
+    #return gradients
 
-def update_params(params, gradients):
+def update_params(params, gradients, alpha):
 
-    W_xh = params['W_xh']
-    W_hh = params['W_hh']
-    W_hy = params['W_hy']
-    b_h = params['b_h']
-    b_y = params['b_y']
+    params['W_xh'] -= alpha * gradients['dW_xh']
+    params['W_hh'] -= alpha * gradients['dW_hh']
+    params['W_hy'] -= alpha * gradients['dW_hy']
+    params['b_h'] -= alpha * gradients['db_h']
+    params['b_y'] -= alpha * gradients['db_y']
 
-    dW_xh = gradients['dW_xh']
-    dW_hh = gradients['dW_hh']
-    dW_hy = gradients['dW_hy']
-    db_h = gradients['db_h']
-    db_y = gradients['db_y']
+    return params
 
-    
+
 
