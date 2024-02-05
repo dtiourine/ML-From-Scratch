@@ -19,6 +19,11 @@ Currently, the following machine learning models have been implemented in this p
 * Linear Regression
 * Logistic Regression
 
+and the following are a work in progress:
+
+* Basic Neural Network
+* Basic Recurrent Neural Network
+
 ## Datasets
 
 * Linear Regression: Trained/tested on scikit-learn's diabates dataset (https://scikit-learn.org/stable/datasets/toy_dataset.html)
